@@ -1,0 +1,57 @@
+[
+  {
+    "case_id": "AML-1001",
+    "customer_id": "CUST-001",
+    "scenario": "Structuring",
+    "trigger_reason": "Multiple sub-$10k deposits in 48h",
+    "transaction_volume": 48000,
+    "geo_risk": "Medium",
+    "watchlist_hits": [],
+    "alert_priority": "High",
+    "status": "Open"
+  },
+  {
+    "case_id": "AML-1002",
+    "customer_id": "CUST-003",
+    "scenario": "PEP Enhanced Monitoring",
+    "trigger_reason": "High-value transfers to shell entities",
+    "transaction_volume": 215000,
+    "geo_risk": "High",
+    "watchlist_hits": ["OFAC-2025-554"],
+    "alert_priority": "Critical",
+    "status": "Escalated"
+  },
+  {
+    "case_id": "AML-1003",
+    "customer_id": "CUST-002",
+    "scenario": "Rapid In-Out",
+    "trigger_reason": "Crypto off-ramp in <2h after fiat top-up",
+    "transaction_volume": 32000,
+    "geo_risk": "Low",
+    "watchlist_hits": [],
+    "alert_priority": "Medium",
+    "status": "Investigating"
+  },
+  {
+    "case_id": "AML-1004",
+    "customer_id": "CUST-004",
+    "scenario": "High-Risk Geography",
+    "trigger_reason": "Beneficiary bank located in embargoed region",
+    "transaction_volume": 152000,
+    "geo_risk": "High",
+    "watchlist_hits": ["EU-PEP-188"],
+    "alert_priority": "High",
+    "status": "SAR Drafting"
+  },
+  {
+    "case_id": "AML-1005",
+    "customer_id": "CUST-005",
+    "scenario": "Trade-Based AML",
+    "trigger_reason": "Invoice mismatch vs. shipping data",
+    "transaction_volume": 87000,
+    "geo_risk": "Medium",
+    "watchlist_hits": [],
+    "alert_priority": "Medium",
+    "status": "Closed-No SAR"
+  }
+]

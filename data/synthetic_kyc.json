@@ -1,0 +1,81 @@
+[
+  {
+    "customer_id": "CUST-001",
+    "full_name": "Ariana Wells",
+    "dob": "1990-03-11",
+    "national_id": "US-CA-3829917",
+    "residency_status": "Permanent Resident",
+    "kyc_status": "Pending Review",
+    "risk_score": 0.62,
+    "pep_flag": false,
+    "source_of_funds": "Tech salary, RSU vesting",
+    "chatbot_channel": "Web",
+    "documents": [
+      {"type": "passport", "confidence": 0.96},
+      {"type": "utility_bill", "confidence": 0.91}
+    ]
+  },
+  {
+    "customer_id": "CUST-002",
+    "full_name": "Mateo Singh",
+    "dob": "1986-07-29",
+    "national_id": "US-NY-9028113",
+    "residency_status": "Citizen",
+    "kyc_status": "Approved",
+    "risk_score": 0.21,
+    "pep_flag": false,
+    "source_of_funds": "Full-time employment",
+    "chatbot_channel": "Mobile",
+    "documents": [
+      {"type": "drivers_license", "confidence": 0.94}
+    ]
+  },
+  {
+    "customer_id": "CUST-003",
+    "full_name": "Chen Wei",
+    "dob": "1994-01-18",
+    "national_id": "SG-PP-821199",
+    "residency_status": "Citizen",
+    "kyc_status": "Enhanced Due Diligence",
+    "risk_score": 0.78,
+    "pep_flag": true,
+    "source_of_funds": "Family-owned logistics",
+    "chatbot_channel": "Web",
+    "documents": [
+      {"type": "passport", "confidence": 0.89},
+      {"type": "bank_statement", "confidence": 0.87}
+    ]
+  },
+  {
+    "customer_id": "CUST-004",
+    "full_name": "Lucia Fernandez",
+    "dob": "1998-12-05",
+    "national_id": "ES-MD-181822",
+    "residency_status": "Citizen",
+    "kyc_status": "Rejected",
+    "risk_score": 0.85,
+    "pep_flag": false,
+    "source_of_funds": "Independent art sales",
+    "chatbot_channel": "WhatsApp",
+    "documents": [
+      {"type": "passport", "confidence": 0.67},
+      {"type": "cash_deposit_receipt", "confidence": 0.52}
+    ]
+  },
+  {
+    "customer_id": "CUST-005",
+    "full_name": "Noah Ibrahim",
+    "dob": "1979-09-20",
+    "national_id": "AE-DXB-449910",
+    "residency_status": "Resident",
+    "kyc_status": "Pending Documents",
+    "risk_score": 0.55,
+    "pep_flag": false,
+    "source_of_funds": "Oilfield services contractor",
+    "chatbot_channel": "Mobile",
+    "documents": [
+      {"type": "passport", "confidence": 0.91},
+      {"type": "trade_license", "confidence": 0.84}
+    ]
+  }
+]
