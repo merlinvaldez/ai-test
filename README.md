@@ -18,7 +18,7 @@
 | Scalability & Reliability | SCALE-401 | Platform owner supports 5k concurrent sessions within latency SLAs. | 13 | High | AI built load profile tables and monitored KPIs. |
 |  | SCALE-405 | Compliance officer exports 30-day audits in <5 minutes. | 3 | Medium | AI drafted report layouts and pagination logic. |
 
-Story points were estimated by comparing AI-suggested task breakdowns with historic velocity (5 points ≈ 2 ideal days). Priorities reflect MoSCoW rankings produced by AI that weighted regulatory impact, customer experience, and dependency risk; the team validated and adjusted these rankings during refinement.
+Story points were estimated by comparing AI-suggested task breakdowns with historic velocity (5 points approx. 2 ideal days). Priorities reflect MoSCoW rankings produced by AI that weighted regulatory impact, customer experience, and dependency risk; the team validated and adjusted these rankings during refinement.
 
 ## Sprint Planning and Adjustments
 - **Sprint 1 (target 18 pts):** Delivered CHAT-101, seeded NLP-201 data prep, stubbed INT-301 webhooks, and generated synthetic KYC/AML datasets (`data/`). AI supplied acceptance criteria and synthetic personas, letting engineers stay focused on pipelines instead of writing fixtures.
@@ -29,8 +29,21 @@ Story points were estimated by comparing AI-suggested task breakdowns with histo
 1. **Integration contract drift:** AI diffed failing payloads against historical schemas and generated transformation code so automated tests could continue while external teams caught up.
 2. **Story point volatility in NLP work:** LLM-based Monte Carlo forecasting recalculated velocity ranges when compliance reviews added scope, letting leadership approve an extra buffer sprint instead of forcing overtime.
 3. **Synthetic data privacy review:** An AI classifier scanned generated datasets to confirm no real PII slipped in before committing `data/synthetic_kyc.json` and `data/synthetic_aml.json`.
+4. **Conflict resolution:** When two AML SMEs rolled off the project mid-sprint, an AI summarizer turned prior stand-ups and design notes into handover briefs, enabling replacements to assume ownership without rework and keeping sprint commitments intact.
 
 ## Testing, Reporting, and Critical Outcomes
-- Pytest automation (`tests/test_data_quality.py`) validates every synthetic record, ensuring AML cases always reference existing KYC customers, risk scores stay normalized, and alert vocabularies remain consistent—an early guardrail produced entirely via AI-authored scaffolding.
+- Pytest automation (`tests/test_data_quality.py`) validates every synthetic record, ensuring AML cases always reference existing KYC customers, risk scores stay normalized, and alert vocabularies remain consistent - an early guardrail produced entirely via AI-authored scaffolding.
 - The RTM snapshot captures execution status for every requirement, highlighting where dependencies still block progress. AI-authored notes make risk reviews faster because they already summarize mitigation strategies.
 - The overall process demonstrated that generative AI can compress planning cycles, keep documentation synchronized, and surface risks early. Remaining work (performance harness, IdP integration) has AI-generated design notes ready, positioning the team to maintain velocity into Sprint 3 without redoing groundwork.
+
+## GenAI in Testing Observability
+
+| Criteria | Evidence | Rating |
+| --- | --- | --- |
+| Requirements gathering | AI-authored requirement IDs in `docs/requirements.md` trace every capability pillar. | Observed |
+| Epic and user story creation | Backlog table above maps requirements into epics CHAT/NLP/INT/SCALE with user stories. | Observed |
+| Story point estimation & prioritization | README details AI-assisted point sizing (5 pts approx. 2 days) and MoSCoW ordering. | Observed |
+| Sprint planning | Sprint 1 and Sprint 2 breakdowns show how stories were grouped and sequenced via AI guidance. | Observed |
+| Sprint execution & monitoring | Pytest automation plus AI retros/alerts supported progress tracking and load-harness prep. | Observed |
+| Conflict resolution | AI-produced handover briefs resolved SME departures without derailing commitments (see challenge #4). | Observed |
+| Sprint plan review & adjustment | Adaptive re-planning section recounts AI-led adjustments after watchlist feed changes. | Observed |
